@@ -9,7 +9,7 @@
   <meta name="description" content="这是一个全新的测试网站，致力于学习一些无聊但好玩的小玩意… 更新了什么？只有一个网页播放器，什么？在哪里？往下翻一翻哦~~ tips：本网站基于hexo开发..本身就是简单易懂的小玩意……">
 <meta property="og:type" content="article">
 <meta property="og:title" content="新的开始__25-3-21">
-<meta property="og:url" content="https://leopard-1.guthub.io/2025/03/21/New-Start/index.html">
+<meta property="og:url" content="https://leopard-1.github.io/2025/03/21/New-Start/index.html">
 <meta property="og:site_name" content="Natazial_BLOG">
 <meta property="og:description" content="这是一个全新的测试网站，致力于学习一些无聊但好玩的小玩意… 更新了什么？只有一个网页播放器，什么？在哪里？往下翻一翻哦~~ tips：本网站基于hexo开发..本身就是简单易懂的小玩意……">
 <meta property="og:locale" content="zh_CN">
@@ -66,7 +66,7 @@
         <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://leopard-1.guthub.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://leopard-1.github.io"></form>
       </div>
     </div>
   </div>
@@ -102,7 +102,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://leopard-1.guthub.io/2025/03/21/New-Start/" data-id="cm8hjhr6g0000e4rcfogr43ya" data-title="新的开始__25-3-21" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://leopard-1.github.io/2025/03/21/New-Start/" data-id="cm8kq6mau00011src5173a9da" data-title="新的开始__25-3-21" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -133,6 +133,49 @@
 </article>
 
 
+
+
+
+
+  <section id="comments">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk@latest/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+    <script src="https://priesttomb.github.io/js/md5.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            new Gitalk({
+                clientID: 'Iv23liZ4WcWbU2M53zdy',
+                clientSecret: '9ab9e4b541852d90ab46ef9eb90160f62d4a09cb',
+                repo: 'leopard-1.github.io',
+                owner: 'leopard-1',
+                admin: ['leopard-1'],
+                id: md5(location.pathname), // 使用文章路径的 MD5 作为唯一标识
+                distractionFreeMode: true
+            }).render('gitalk-container');
+        });
+    </script>
+  </section>
+
+
+
+  <div id="gitalk-container"></div>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk@latest/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var gitalk = new Gitalk({
+        clientID: 'Iv23liZ4WcWbU2M53zdy',
+        clientSecret: '9ab9e4b541852d90ab46ef9eb90160f62d4a09cb',
+        repo: 'leopard-1.github.io',
+        owner: 'leopard-1',
+        admin: ['leopard-1'],
+        id: md5(location.pathname), // 使用文章路径的 MD5 作为唯一标识
+        distractionFreeMode: true
+      });
+      gitalk.render('gitalk-container');
+    });
+  </script>
 </section>
         
           <aside id="sidebar">
@@ -182,20 +225,17 @@
         
       </div>
       <footer id="footer">
-  <div class="footer-left">
-    &copy; 2025 John Doe
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-        <li><a href="/archives">Archives</a></li>
-        <li><a href="/about">About</a></li>
-      </ul>
-    </nav>
-    <!-- 在这里添加你的链接 -->
-    <a href="https://icp.gov.moe/?keyword=20250628" target="_blank">萌ICP备20250628号</a>
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      <a href="https://icp.gov.moe/?keyword=20250628" target="_blank">萌ICP备20250628号</a>
+    </div>
   </div>
 </footer>
+
     </div>
     <nav id="mobile-nav">
   
@@ -223,7 +263,6 @@
 
 
 
-<script type="module" src="/hexo-aduio/audio.js"></script>
   </div>
 </body>
 </html>
